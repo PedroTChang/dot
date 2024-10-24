@@ -1,4 +1,3 @@
-
 # Introduction
 
 I tried so many different ways to track
@@ -16,7 +15,7 @@ Initialize a bare repository
 git init --bare ~/.dot
 ```
 
-Create a Fish function named ```dot```
+Create a Fish function named `dot`
 
 ```fish
 function dot -w git -d "Manages dotfiles"
@@ -24,15 +23,11 @@ function dot -w git -d "Manages dotfiles"
 end
 ```
 
-Store it in ```~/.config/fish/functions/```, and ```source ~/.config/fish/functions/dot```
+Store it in `~/.config/fish/functions/`, and `source ~/.config/fish/functions/dot`
 
-To avoid accidentally adding all files in the home folder:
+~~To avoid accidentally adding all files in the home folder: echo "\*" > ~/.gitignore~~
 
-```shell
-echo "*" > ~/.gitignore
-```
-
-Now to add files or directories you need to ```force``` the push
+Now to add files or directories you need to `force` the push
 
 ```shell
 dot add -f .dotfile
@@ -49,6 +44,6 @@ mv ~/.dotfiles ~/.dotfiles.backup
 ```
 
 ```shell
-git clone --separate-git-dir=~/.dot 
+git clone --separate-git-dir=~/.dot
 https://github.com/$USERNAME/$REPOSITORY.git ~
 ```
