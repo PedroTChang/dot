@@ -25,7 +25,7 @@ end
 
 Store it in `~/.config/fish/functions/`, and `source ~/.config/fish/functions/dot`
 
-~~To avoid accidentally adding all files in the home folder: echo "\*" > ~/.gitignore~~
+~~To avoid accidentally adding all files in the home folder: echo "\*" > .gitignore~~
 
 Now to add files or directories you need to `force` the push
 
